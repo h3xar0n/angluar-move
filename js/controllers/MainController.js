@@ -37,7 +37,7 @@ app.controller('MainController', ['$scope', function($scope) {
     }
   ];
 
-  $scope.increase = function() {
-    this.count ++;
+  $scope.increase = function(index) {
+    $scope.exercises[index].count += 1;
   };
 }]);
